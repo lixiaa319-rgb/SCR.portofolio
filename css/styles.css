@@ -1,0 +1,182 @@
+/* 🌸 Tema Netral Cewek Aktif - Pecinta Olahraga & Alam */
+body {
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: #F8FBF7; /* latar lembut alami */
+	color: #333333; /* teks netral mudah dibaca */
+}
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Judul dan skill list */
+h1, h2, .skill-list {
+	font-family: 'Inknut Antiqua', serif;
+	color: #89B18C; /* hijau lembut netral */
+}
+
+img {
+	max-width: 100%;
+
+}
+
+/* Navigasi utama */
+nav {
+	background-color: #A7C7A5; /* hijau sage pastel */
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Header */
+header {
+	top: 70px;
+	position: relative;
+	margin-bottom: 220px;
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -140px; 
+}
+
+/* Menu navigasi */
+nav ul li {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #2F2F2F; /* abu gelap elegan */
+	transition: color 0.3s;
+}
+nav li a:hover {
+	color: #89B18C; /* hijau netral lembut saat hover */
+}
+
+/* Garis tengah di navbar */
+li.empty {
+	width: 90px;
+	border-top: 1px solid #D4E2D1; /* hijau muda keabu-abuan */
+	top: -5px;
+	position: relative; 
+}
+
+/* Judul dan teks */
+h1 {
+	font-size: 100px;
+	line-height: 130%;
+}
+h2 {
+	font-size: 30px;
+	line-height: 130%;
+}
+h1, h2 {
+	font-weight: normal;
+}
+p {
+	line-height: 150%;
+	color: #444444;
+}
+
+/* List umum */
+ul li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+/* Tombol */
+.button {
+	border: none;
+	font-size: 15px;
+	border-radius: 25px;
+	text-decoration: none;
+	background-color: #A7C7A5; /* hijau sage */
+	color: white;
+	padding: 10px 25px;
+	margin-top: 40px;
+	display: inline-block;
+	transition: background 0.3s ease-in-out;
+}
+.button:hover {
+	background-color: #89B18C; /* hijau lebih dalam saat hover */
+	color: white;
+}
+
+/* Caption foto */
+figcaption {
+	font-size: 10px;
+	margin-top: 10px;
+	color: #777777;
+}
+
+/* Foto intro */
+.intro-img {
+	box-shadow: 1px 2px 30px rgba(0,0,0,0.1);
+	margin-top: 30px;
+	border-radius: 10px;
+	left: auto;
+}
+
+/* Skill list */
+.skill-list {
+	text-align: center;
+	font-size: 45px;
+	line-height: 150%;
+	margin-bottom: 130px;
+	color: #89B18C;
+}
+
+/* Section project */
+.project {
+	margin: 30px 0; 
+	padding: 50px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+/* Section warna lembut */
+.blue {
+	background-color: #F2F8F3; /* putih kehijauan natural */
+}
+
+/* Tombol dalam project */
+.project .button {
+	margin-top: 10px;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	margin: 100px;
+	background-color: #A7C7A5; /* hijau pastel lembut */
+	color: white;
+	padding: 60px 20px;
+	border-radius: 15px;
+}
+footer h2 {
+	font-size: 45px;
+	margin-bottom: 40px;
+	color: #FFFFFF;
+}
+footer p {
+	color: #F8FBF7;
+	font-size: 14px;
+}
+
+/* Teks rata kanan */
+.right-alignment {
+	text-align: right;
+}

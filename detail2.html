@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menjelajahi Alam dan Belajar dari Perjalanan</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#contact">contact</a></li>
+			<li><a href="Profil.html">Profil</a></li>
+			<li><a href="Tujuan.html">Tujuan</a></li>
+			<li class="empty"></li>
+			<li><a href="https://www.instagram.com/uci_lpangndong_/" target="_blank">instagram</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/g2.jpg" class="full-width-image" alt="Menjelajahi Alam dan Belajar dari Perjalanan">
+			<h1 class="project-title">Menjelajahi Alam<br>dan Belajar dari Perjalanan</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="index.html">Home</a> /  Menjelajahi Alam dan Belajar dari Perjalanan
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Gambaran Umum</h2>
+						<p>Saya mencintai kegiatan alam seperti hiking dan naik gunung karena selalu memberikan rasa kebebasan dan kedamaian. Setiap langkah di jalur pendakian mengajarkan saya tentang arti kesabaran, kekuatan, dan kebersamaan.  Alam bukan sekadar tempat untuk dikunjungi, tapi ruang untuk belajar dan merenung tentang kehidupan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pelajaran dari Alam</h2>
+						<p>Selama banyak perjalanan mendaki, saya belajar banyak hal berharga seperti:</p>
+						<ul>
+							<li>Pentingnya persiapan fisik dan mental sebelum memulai perjalanan</li>
+							<li>Menjaga kebersamaan dan saling tolong-menolong dengan rekan pendaki</li>
+							<li>Menghargai setiap langkah kecil menuju puncak</li>
+							<li>Mengenal batas diri dan tetap rendah hati terhadap alam</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Filosofi Pendakian</h2>
+						<p>Bagi saya, mendaki gunung adalah cermin dari perjalanan hidup.  Ada saatnya kita harus menanjak pelan, berhenti sejenak, bahkan mundur untuk mengambil napas.  Namun, setiap langkah membawa pelajaran baru tentang kesabaran, tanggung jawab, dan rasa syukur.  Di puncak, kita tidak hanya melihat keindahan alam, tapi juga betapa kecilnya kita dibandingkan ciptaan Tuhan yang luas ini.</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+
+						<h2>Manfaat dan Dampak Positif</h2>
+						<p>Kegiatan hiking dan petualangan alam memberikan banyak manfaat dalam kehidupan saya:</p>
+						<ul>
+							<li>Menjaga kebugaran tubuh dan ketahanan fisik</li>
+							<li>Meningkatkan fokus dan ketenangan pikiran</li>
+							<li>Menumbuhkan rasa peduli terhadap lingkungan</li>
+							<li>Memperkuat ikatan sosial melalui kerja sama dan gotong royong</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Galeri Petualangan</h2>
+						<p>Beberapa momen yang saya abadikan selama kegiatan hiking dan pendakian:</p>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container" style="width: auto;">
+								<div class="slider-slide">
+									<img src="./img/i.jpg" alt="Menjelajahi Alam dan Belajar dari Perjalanan">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/u.jpg" alt="Menjelajahi Alam dan Belajar dari Perjalanan">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/c.jpg" alt="Menjelajahi Alam dan Belajar dari Perjalanan">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/s.jpg" alt="Menjelajahi Alam dan Belajar dari Perjalanan">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/u.jpg" alt="Menjelajahi Alam dan Belajar dari Perjalanan">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Want to share stories or experiences about nature?<br>
+			Contact<br>sucilapangandong@gmail.com</h2>
+			<p>keep active, stay grounded – Suci Ramadani2025</p>
+		</footer>
+	</body>
+	</html>

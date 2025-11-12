@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perjalanan Bela Diri<br>dan Makna di Baliknya</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#contact">contact</a></li>
+			<li><a href="Profil.html">Profil</a></li>
+			<li><a href="Tujuan.html">Tujuan</a></li>
+			<li class="empty"></li>
+			<li><a href="https://www.instagram.com/uci_lpangndong_/" target="_blank">instagram</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/g3.jpg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Perjalanan Bela Diri<br>dan Makna di Baliknya</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="index.html">Home</a> / Perjalanan Bela Diri dan Makna di Baliknya
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Gambaran Umum</h2>
+						<p>Bela diri bagi saya bukan sekadar olahraga untuk bertarung, melainkan cara membentuk kepribadian. Melalui latihan pencak silat, saya belajar untuk mengendalikan emosi, menghormati lawan, dan menjaga keseimbangan antara kekuatan serta ketenangan. Setiap gerakan memiliki filosofi hidup yang mendalam, mengajarkan makna kesabaran, disiplin, dan rasa hormat terhadap sesama.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pelajaran & Pengalaman</h2>
+						<p>Selama bertahun-tahun berlatih, saya menemukan nilai-nilai penting dari dunia bela diri:</p>
+					
+							<ol id="daftar-ol" title="Daftar Pelajaran & Pengalaman Nomor">
+						  		<li>Ketekunan dan disiplin dalam menghadapi kesulitan latihan</li>
+  								<li>Mengendalikan ego serta menjaga sikap hormat kepada guru dan teman</li>
+  								<li>Mengerti bahwa kekuatan sejati berasal dari ketenangan batin</li>
+ 							 	<li>Mengembangkan mental pantang menyerah di dalam dan luar arena</li>
+							</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Makna Filosofis dalam Bela Diri</h2>
+						<p>Bagi saya, silat bukan sekadar teknik, tapi seni menjaga kehormatan diri. Di setiap latihan, saya menemukan keseimbangan antara kekuatan dan kelembutan, antara ambisi dan kerendahan hati. Melalui bela diri, saya belajar bahwa kemenangan sejati bukanlah mengalahkan orang lain, melainkan menaklukkan diri sendiri.</p>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Hasil dan Dampak Positif</h2>
+						<p>Dari perjalanan saya berlatih bela diri, banyak hal positif yang saya rasakan:</p>
+						<ul>
+							<li>Tubuh menjadi lebih kuat dan sehat</li>
+  							<li>Fokus dan disiplin meningkat dalam kehidupan sehari-hari</li>
+  							<li>Lebih tenang dalam menghadapi tekanan dan tantangan</li>
+ 						 	<li>Menumbuhkan rasa percaya diri dan keteguhan hati</li>
+						</ul>
+							
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Galeri Latihan & Kegiatan</h2>
+						<p>Beberapa momen latihan dan kegiatan bela diri yang berkesan bagi saya:</p>
+
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/g4.jpg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/iya2.jpg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/g3.jpg" alt="iPad App">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+			<h2>Want to share sports and nature stories?<br>
+				 Contact<br>sucilapangandong@gmail.com</h2>
+				<p>keep active, stay grounded – Suci Ramadani 2025</p>
+
+	</footer>
+	</body>
+	</html>
