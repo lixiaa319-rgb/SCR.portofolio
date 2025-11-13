@@ -17,6 +17,8 @@ h1, h2, .skill-list {
 
 img {
 	max-width: 100%;
+	height: auto;
+	display: block;
 
 }
 
