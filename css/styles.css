@@ -17,6 +17,8 @@ h1, h2, .skill-list {
 
 img {
 	max-width: 100%;
+	
+
 }
 
 /* Navigasi utama */
@@ -26,6 +28,17 @@ nav {
 	z-index: 1;
 	width: 100%;
 	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Header */
+header {
+	top: 70px;
+	position: relative;
+	margin-bottom: 220px;
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -140px; 
 }
 
 /* Menu navigasi */
@@ -59,37 +72,6 @@ li.empty {
 	border-top: 1px solid #D4E2D1; /* hijau muda keabu-abuan */
 	top: -5px;
 	position: relative; 
-}
-
-/* Header */
-header {
-	top: 70px;
-	position: relative;
-	margin-bottom: 220px;
-	background-image: url('../img/background.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: -140px; 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap; /* supaya di mobile gambar bisa di bawah teks */
-}
-
-/* Kolom teks dan gambar */
-header .col-sm {
-	flex: 1 1 45%; /* masing-masing kolom 45% di desktop */
-	padding: 20px;
-}
-
-/* Gambar intro */
-header .intro-img {
-	box-shadow: 1px 2px 30px rgba(0,0,0,0.1);
-	margin-top: 30px;
-	border-radius: 10px;
-	width: 100%;
-	max-width: 400px; /* ukuran maksimal desktop */
-	height: auto;
 }
 
 /* Judul dan teks */
@@ -138,6 +120,14 @@ figcaption {
 	font-size: 10px;
 	margin-top: 10px;
 	color: #777777;
+}
+
+/* Foto intro */
+.intro-img {
+	box-shadow: 1px 2px 30px rgba(0,0,0,0.1);
+	margin-top: 30px;
+	border-radius: 10px;
+	left: auto;
 }
 
 /* Skill list */
@@ -190,27 +180,4 @@ footer p {
 /* Teks rata kanan */
 .right-alignment {
 	text-align: right;
-}
-
-/* RESPONSIVE: Mobile */
-@media (max-width: 768px) {
-	header {
-		flex-direction: column; /* kolom gambar ke bawah teks */
-		text-align: center;
-	}
-	header .col-sm {
-		flex: 1 1 100%;
-		padding: 10px;
-	}
-	header .intro-img {
-		max-width: 300px; /* lebih kecil di mobile */
-		margin: 20px auto 0;
-	}
-	nav ul li {
-		display: block;
-		margin: 10px 0;
-	}
-	nav ul {
-		padding: 15px;
-	}
 }
