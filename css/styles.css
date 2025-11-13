@@ -1,10 +1,8 @@
 /* 🌸 Tema Netral Cewek Aktif - Pecinta Olahraga & Alam */
 body {
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #F8FBF7; /* latar lembut alami */
-    color: #333333; /* teks netral mudah dibaca */
-}
-body, ul {
+    background-color: #F8FBF7; 
+    color: #333333;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +10,7 @@ body, ul {
 /* Judul dan skill list */
 h1, h2, .skill-list {
     font-family: 'Inknut Antiqua', serif;
-    color: #89B18C; /* hijau lembut netral */
+    color: #89B18C; 
 }
 
 img {
@@ -21,21 +19,11 @@ img {
 
 /* Navigasi utama */
 nav {
-    background-color: #A7C7A5; /* hijau sage pastel */
+    background-color: #A7C7A5; 
     position: fixed;
     z-index: 10;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* Menu navigasi */
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
 }
 
 nav ul {
@@ -44,19 +32,27 @@ nav ul {
     padding: 30px;
 }
 
-nav li a {
-    text-decoration: none;
-    color: #2F2F2F; /* abu gelap elegan */
-    transition: color 0.3s;
-}
-nav li a:hover {
-    color: #89B18C; /* hijau netral lembut saat hover */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
 }
 
-/* Garis tengah di navbar */
+nav li a {
+    text-decoration: none;
+    color: #2F2F2F; 
+    transition: color 0.3s;
+}
+
+nav li a:hover {
+    color: #89B18C; 
+}
+
 li.empty {
     width: 90px;
-    border-top: 1px solid #D4E2D1; /* hijau muda keabu-abuan */
+    border-top: 1px solid #D4E2D1; 
     top: -5px;
     position: relative; 
 }
@@ -64,10 +60,10 @@ li.empty {
 /* Header */
 header {
     display: flex;
-    flex-wrap: wrap; /* agar mobile bisa turun */
+    flex-wrap: wrap; /* supaya mobile bisa turun */
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 220px; /* sesuai style lama */
+    margin-bottom: 220px; 
     padding: 50px 20px;
     position: relative;
     background-image: url('../img/background.png');
@@ -78,15 +74,13 @@ header {
 
 /* Kolom header */
 header .col-sm {
-    flex: 1 1 400px; /* minimal lebar 400px */
+    flex: 1 1 400px; 
     padding: 20px;
-    position: relative;
-    z-index: 2; /* teks selalu di atas */
 }
 
 /* Teks header */
 header h1 {
-    font-size: 100px; /* sesuai style kamu */
+    font-size: 100px; 
     line-height: 130%;
     font-weight: normal;
     margin: 0 0 20px 0;
@@ -98,33 +92,41 @@ header .intro-img {
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 1px 2px 30px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 1; /* di bawah teks */
 }
 
-/* Flex order agar di mobile rapi */
+/* Flex order supaya desktop tetap teks kiri & gambar kanan, mobile turun */
 .header-text {
-    order: 1; /* teks pertama di semua layar */
+    order: 1;
+    text-align: left; /* desktop teks kiri */
 }
 
 .header-image {
-    order: 2; /* gambar kedua di semua layar */
+    order: 2;
 }
 
 /* Responsive untuk mobile */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* kolom turun */
+        flex-direction: column; 
         text-align: center;
         padding: 30px 10px;
     }
 
+    .header-text {
+        order: 1;
+        text-align: center;
+    }
+
+    .header-image {
+        order: 2;
+        margin-top: 20px;
+    }
+
     header h1 {
-        font-size: 50px; /* lebih kecil di HP */
+        font-size: 50px; 
     }
 
     header .intro-img {
-        margin-top: 20px;
         max-width: 300px;
     }
 }
@@ -141,15 +143,16 @@ ul li {
     font-size: 15px;
     border-radius: 25px;
     text-decoration: none;
-    background-color: #A7C7A5; /* hijau sage */
+    background-color: #A7C7A5; 
     color: white;
     padding: 10px 25px;
     margin-top: 40px;
     display: inline-block;
     transition: background 0.3s ease-in-out;
 }
+
 .button:hover {
-    background-color: #89B18C; /* hijau lebih dalam saat hover */
+    background-color: #89B18C; 
     color: white;
 }
 
@@ -180,7 +183,7 @@ figcaption {
 
 /* Section warna lembut */
 .blue {
-    background-color: #F2F8F3; /* putih kehijauan natural */
+    background-color: #F2F8F3; 
 }
 
 /* Tombol dalam project */
@@ -192,7 +195,7 @@ figcaption {
 footer {
     text-align: center;
     margin: 100px;
-    background-color: #A7C7A5; /* hijau pastel lembut */
+    background-color: #A7C7A5; 
     color: white;
     padding: 60px 20px;
     border-radius: 15px;
@@ -209,12 +212,12 @@ footer p {
 
 /* Footer email link */
 footer h2 a {
-    color: #F8FBF7; /* jangan biru, sama seperti teks */
+    color: #F8FBF7; 
     text-decoration: none;
     transition: color 0.3s;
 }
 footer h2 a:hover {
-    color: #FFFFFF; /* tetap kontras saat hover */
+    color: #FFFFFF; 
 }
 
 /* Teks rata kanan */
