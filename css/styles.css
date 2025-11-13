@@ -3,7 +3,10 @@ body {
 	font-family: 'IBM Plex Mono', monospace;
 	background-color: #F8FBF7; /* latar lembut alami */
 	color: #333333; /* teks netral mudah dibaca */
+	margin: 0;
+	padding: 0;
 }
+
 body, ul {
 	margin: 0;
 	padding: 0;
@@ -17,8 +20,7 @@ h1, h2, .skill-list {
 
 img {
 	max-width: 100%;
-
-
+	height: auto;
 }
 
 /* Navigasi utama */
@@ -28,17 +30,6 @@ nav {
 	z-index: 1;
 	width: 100%;
 	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* Header */
-header {
-	top: 70px;
-	position: relative;
-	margin-bottom: 220px;
-	background-image: url('../img/background.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: -140px; 
 }
 
 /* Menu navigasi */
@@ -62,6 +53,7 @@ nav li a {
 	color: #2F2F2F; /* abu gelap elegan */
 	transition: color 0.3s;
 }
+
 nav li a:hover {
 	color: #89B18C; /* hijau netral lembut saat hover */
 }
@@ -74,27 +66,48 @@ li.empty {
 	position: relative; 
 }
 
-/* Judul dan teks */
-h1 {
-	font-size: 100px;
-	line-height: 130%;
-}
-h2 {
-	font-size: 30px;
-	line-height: 130%;
-}
-h1, h2 {
-	font-weight: normal;
-}
-p {
-	line-height: 150%;
-	color: #444444;
+/* Header */
+header {
+	top: 70px;
+	position: relative;
+	margin-bottom: 220px;
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -140px; 
+	padding: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-/* List umum */
-ul li {
+/* Header teks dan gambar */
+header .col-sm {
+	flex: 1;
+	min-width: 300px;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 80px;
+	line-height: 1.2;
+}
+
+header ul {
 	list-style: none;
-	margin: 10px 0;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.header-text {
+	order: 1;
+}
+
+.intro-img {
+	box-shadow: 1px 2px 30px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	order: 2;
 }
 
 /* Tombol */
@@ -110,24 +123,10 @@ ul li {
 	display: inline-block;
 	transition: background 0.3s ease-in-out;
 }
+
 .button:hover {
 	background-color: #89B18C; /* hijau lebih dalam saat hover */
 	color: white;
-}
-
-/* Caption foto */
-figcaption {
-	font-size: 10px;
-	margin-top: 10px;
-	color: #777777;
-}
-
-/* Foto intro */
-.intro-img {
-	box-shadow: 1px 2px 30px rgba(0,0,0,0.1);
-	margin-top: 30px;
-	border-radius: 10px;
-	left: auto;
 }
 
 /* Skill list */
@@ -161,20 +160,32 @@ figcaption {
 /* Footer */
 footer {
 	text-align: center;
-	margin: 100px;
+	margin: 100px 20px;
 	background-color: #A7C7A5; /* hijau pastel lembut */
 	color: white;
 	padding: 60px 20px;
 	border-radius: 15px;
 }
+
 footer h2 {
 	font-size: 45px;
 	margin-bottom: 40px;
 	color: #FFFFFF;
 }
+
 footer p {
 	color: #F8FBF7;
 	font-size: 14px;
+}
+
+/* Link email hitam */
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
 }
 
 /* Teks rata kanan */
@@ -182,3 +193,19 @@ footer p {
 	text-align: right;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+	header h1 {
+		font-size: 50px;
+	}
+	.skill-list {
+		font-size: 30px;
+	}
+	footer h2 {
+		font-size: 30px;
+	}
+}
