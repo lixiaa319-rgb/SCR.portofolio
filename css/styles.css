@@ -183,25 +183,3 @@ footer p {
 	text-align: right;
 }
 
-/* ...semua style lama di sini... */
-
-/* Responsive image & layout di HP */
-@media (max-width: 768px) {
-  .row {
-    display: block;
-  }
-  .col-sm {
-    width: 100% !important;
-    display: block;
-    margin-bottom: 30px;
-  }
-  figure {
-    margin: 0 auto;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-}
